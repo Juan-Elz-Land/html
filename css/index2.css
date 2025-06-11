@@ -1,5 +1,4 @@
 
-
 .container{
     background-color: red;
     border: solid black;
@@ -129,4 +128,69 @@
 
 .container-grid div{
     border-radius: 15px;
+}
+
+@media(max-width: 900px){
+
+    .container-grid{
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px;
+    }
+
+    .container-grid div:nth-child(1){
+        grid-column: auto;
+        grid-row: auto;
+        background-color: aqua;
+        height: auto;
+    }
+
+    .container-grid div:nth-child(2){
+        grid-column: auto;
+        grid-row: auto;
+        background-color: blue;
+        height: auto;
+    }
+
+    .container-grid div:nth-child(3){
+        grid-column: auto;
+        grid-row: auto;
+        background-color: red;
+        height: auto;    
+    }
+
+    .container-grid div:nth-child(4){
+        grid-column: auto;
+        grid-row: auto;
+        background-color: yellow;
+        height: auto;
+    }
+
+    .container-grid div:nth-child(5){
+        grid-column: auto;
+        grid-row: auto;
+        background-color: orange;
+        height: auto;
+    }
+
+    .container-grid div:nth-child(6){
+        grid-column: auto;
+        grid-row: auto;
+        background-color: aquamarine;
+        height: auto;
+    }
+
+    .container-grid div:nth-child(7){
+        grid-column: auto ;
+        grid-row: auto;
+        background-color: black;
+        height: auto;
+    }
+
+    @media(max-width:400px){
+        .container-grid{
+            grid-template-columns: repeat(1,1fr);
+            gap: 15px;
+            padding: 15px;
+        }
+    }
 }
